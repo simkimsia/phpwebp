@@ -47,8 +47,11 @@
 		<meta name="author" content="kim sia"><!-- Date: 2012-04-30 -->
 	</head>
 	<body>
-		Length : <?php echo $radius; ?> cm<br />
+		Length : <?php echo $length; ?> cm<br />
 		Area : <?php echo $area; ?> cm square<br />
 		Perimeter : <?php echo $perimeter; ?> cm<br />
+		
+		<a href="squareform.php">Back to square form</a><br />
+		<a href="index.php">Back to index</a><br />
 	</body>
 </html>

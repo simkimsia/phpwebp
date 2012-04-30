@@ -51,5 +51,8 @@
 		Radius : <?php echo $radius; ?> cm<br />
 		Area : <?php echo $area; ?> cm square<br />
 		Perimeter : <?php echo $perimeter; ?> cm<br />
+		
+		<a href="circleform.php">Back to circle form</a><br />
+		<a href="index.php">Back to index</a><br />
 	</body>
 </html>
