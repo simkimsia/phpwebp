@@ -24,7 +24,7 @@
 			$htmlStringForTable = $htmlStringForTable . '<td>'; // put in td opening tag
 			$htmlStringForTable = $htmlStringForTable . 'row ' . $row; // put in values inside cell
 			$htmlStringForTable = $htmlStringForTable . ' col ' . $col; // put in values inside cell
-			$htmlStringForTable = $htmlStringForTable . '</td>'; // put in td closing tag
+			$htmlStringForTable = $htmlStringForTable . '</td>' . "\n"; // put in td closing tag
 		}
 		
 		
