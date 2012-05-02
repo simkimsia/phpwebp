@@ -25,12 +25,12 @@
 			$htmlStringForTable = $htmlStringForTable . 'row ' . $row; // put in values inside cell
 			$htmlStringForTable = $htmlStringForTable . ' col ' . $col; // put in values inside cell
 			$htmlStringForTable = $htmlStringForTable . '</td>' . "\n"; // put in td closing tag
-		}
+		} // end for loop for $cols
 		
 		
 		$htmlStringForTable = $htmlStringForTable . '</tr>' . "\n"; // put in tr opening tag		
 		
-	}
+	} // end for loop for $rows
 	
 	$htmlStringForTable = $htmlStringForTable . '</table>'; // put in table closing tag
 

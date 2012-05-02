@@ -4,7 +4,7 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<title>
-			Lesson 3 examples
+			Lesson 4 examples
 		</title>
 		<meta name="author" content="kim sia"><!-- Date: 2012-04-30 -->
 	</head>

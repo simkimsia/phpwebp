@@ -10,8 +10,8 @@
 	
 	$htmlStringForTable = "\t" . '<table border="1">' . "\n"; // first put in the table opening tag
 	
-	$rows = 3;
-	$cols = 4;
+	$rows = 100;
+	$cols = 100;
 	
 	// now we build row by row
 	for($row = 1; $row <= $rows; $row++) {
