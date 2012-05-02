@@ -8,31 +8,31 @@
 
 	$htmlStringForTable = ''; // empty string as default
 	
-	$htmlStringForTable = '<table border="1">' . "\n"; // first put in the table opening tag
+	$htmlStringForTable = "\t" . '<table border="1">' . "\n"; // first put in the table opening tag
 	
-	$rows = 2;
-	$cols = 3;
+	$rows = 100;
+	$cols = 100;
 	
 	// now we build row by row
 	for($row = 1; $row <= $rows; $row++) {
 		
 		//$row will be 1, 2, 3, ...
 		// until $row is > $rows then the loop will stop
-		$htmlStringForTable = $htmlStringForTable . '<tr>' . "\n"; // put in tr opening tag
+		$htmlStringForTable = $htmlStringForTable . "\t\t" . '<tr>' . "\n"; // put in tr opening tag
 		
 		for($col = 1; $col <= $cols; $col++) {
-			$htmlStringForTable = $htmlStringForTable . '<td>'; // put in td opening tag
+			$htmlStringForTable = "\t\t\t" . $htmlStringForTable . '<td>'; // put in td opening tag
 			$htmlStringForTable = $htmlStringForTable . 'row ' . $row; // put in values inside cell
 			$htmlStringForTable = $htmlStringForTable . ' col ' . $col; // put in values inside cell
 			$htmlStringForTable = $htmlStringForTable . '</td>' . "\n"; // put in td closing tag
-		} // end for loop for $cols
+		}
 		
 		
-		$htmlStringForTable = $htmlStringForTable . '</tr>' . "\n"; // put in tr opening tag		
+		$htmlStringForTable = $htmlStringForTable . "\t\t" . '</tr>' . "\n"; // put in tr opening tag		
 		
-	} // end for loop for $rows
+	}
 	
-	$htmlStringForTable = $htmlStringForTable . '</table>'; // put in table closing tag
+	$htmlStringForTable = $htmlStringForTable . "\t" . '</table>'; // put in table closing tag
 
 /**
 * 
@@ -46,7 +46,7 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<title>
-			2 rows 3 cols Tables in PHP
+			3 rows 4 cols Tables in PHP
 		</title>
 		<meta name="author" content="kim sia"><!-- Date: 2012-04-30 -->
 	</head>
