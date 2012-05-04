@@ -12,3 +12,4 @@ app/tmp
 themes/tmp
 
 !empty
+*Thumbs.db
