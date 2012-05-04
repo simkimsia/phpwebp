@@ -27,7 +27,6 @@
 			$htmlStringForTable = $htmlStringForTable . '</td>' . "\n"; // put in td closing tag
 		} // end for loop for $cols
 		
-		
 		$htmlStringForTable = $htmlStringForTable . '</tr>' . "\n"; // put in tr opening tag		
 		
 	} // end for loop for $rows
