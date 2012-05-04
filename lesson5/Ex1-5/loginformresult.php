@@ -11,7 +11,7 @@
 			Welcome! You have logged in successfully!
 		</h1>
 		<p>
-			Please <a href="DipList/DipList.php">Click Here</a> to continue.
+			Please <a href="#">Click Here</a> to continue.
 		</p>
 	</body>
 </html>

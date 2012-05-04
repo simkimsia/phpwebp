@@ -25,24 +25,7 @@
 						<p>
 							Thank you for your visit! Please register with us to get notifications of updates with IIT school.
 						</p>
-						<fieldset>
-							<legend>Enter your information in the form below:</legend>
-							<p>
-								<b>Name:</b> <input type="text" name="name" size="20" maxlength="40" value="">
-							</p>
-							<p>
-								<b>Sex:</b> <input type="radio" name="sex" value="Male"> Male <input type="radio" name="sex" value="Female"> Female
-							</p>
-							<p>
-								<b>Email:</b> <input type="text" name="email" size="20" maxlength="80" value="">
-							</p>
-							<p>
-								<b>Password:</b> <input type="password" name="password" size="20" maxlength="80" value="">
-							</p>
-							<p>
-								<b>Contact Number:</b> <input type="text" name="contactno" size="10" maxlength="15" value="">
-							</p>
-						</fieldset>
+
 						<fieldset>
 							<legend>Please tell us about your interests &amp; hobbies:</legend>
 							<p>
@@ -53,33 +36,21 @@
 									<option value="">
 										--Please select--
 									</option>
-									<option value="Diploma in IT">
-										Diploma in IT
-									</option>
+									
 									<option value="Diploma in Internet and Multimedia Design" selected>
 										Diploma in Internet and Multimedia Design
 									</option>
-									<option value="Diploma in Mobile and Wireless Computing">
-										Diploma in Mobile and Wireless Computing
-									</option>
-									<option value="Diploma in Financial Business Informatics">
-										Diploma in Financial Business Informatics
-									</option>
-									<option value="Diploma in Cyber and Digital Security">
-										Diploma in Cyber and Digital Security
-									</option>
-									<option value="Diploma in Game and Entertainment Technology">
-										Diploma in Game and Entertainment Technology
-									</option>
+									
 								</select>
 							</p>
 							<p>
 								<b>Please enter any other Comments you may have:</b><br>
-								<textarea name="comments" rows="5" cols="60"></textarea>
+								
 							</p>
 						</fieldset>
 						<div align="center">
-							<input type="submit" name="submit" value="Register me!"> <input type="reset" value="Reset">
+							<input type="submit" name="submit" value="Register me!"> 
+							
 						</div>
 					</td>
 				</tr>

@@ -24,14 +24,16 @@
 						<p>
 							Please login using your email and password.
 						</p><b>Login:</b>
-						<p>
-							<b>Email:</b> <input type="text" name="email" size="20" maxlength="40">
-						</p>
+
+
+
+
 						<p>
 							<b>Password:</b> <input type="password" name="password" size="20" maxlength="20">
 						</p>
 						<div align="left">
-							<input type="submit" name="submit" value="Login"> <input type="reset" value="Reset"><br>
+							
+							<input type="reset" value="Reset"><br>
 							<br>
 							Not registered? Click <a href="registerform.php">here</a>
 						</div>

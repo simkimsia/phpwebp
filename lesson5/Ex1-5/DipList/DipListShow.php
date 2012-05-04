@@ -22,7 +22,7 @@
 			</tr>
 			<tr>
 				<td style="width: 100%; height: 10%;">
-					Copyright <?php echo date('Y'); ?> by Temasek Informatics &amp; IT School. All rights reserved.
+					Copyright <?php echo date('D'); ?> by Temasek Informatics &amp;
 				</td>
 			</tr>
 		</table>
