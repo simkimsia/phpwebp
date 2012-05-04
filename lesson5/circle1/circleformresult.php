@@ -9,16 +9,16 @@
 	// Set default radius
 	$radius = 0;
 	
-	// @NEW Set default message
+	// Set default message
 	$message = '';
 	
-	// @NEW Set array of errors
+	// Set array of errors
 	$errors = array();
 	
-	// @NEW Set default that there is no errors
+	// Set default that there is no errors
 	$noErrors = true;
 	
-	// validation logic
+	// @NEW validation logic
 	require_once('validations/circleformresult.php');
 	
 	if ($noErrors) {
