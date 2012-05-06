@@ -17,8 +17,8 @@
 				<th>After</th>
 			</tr>
 			<tr>
-				<td><img src="images/before.png" /></td>
-				<td><img src="images/after.png" /></td>
+				<td><img src="images/before.jpg" width="600" height="159"/></td>
+				<td><img src="images/after.jpg" width="600" height="315" /></td>
 			</tr>
 		</table>
 		<br />
