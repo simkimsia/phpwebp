@@ -71,11 +71,7 @@
 				<td style="width: 100%; height: 70%;">
 					Please choose a diploma you are interested in:<br>
 					<ul>
-						<?php foreach($diplomas as $key => $diploma) : ?>
-							<li>
-								<a href="<?php echo $diploma['url']; ?>"><?php echo $diploma['name']; ?></a></li>
-							</li>
-						<?php endforeach; ?>
+
 					</ul>
 				</td>
 			</tr>
