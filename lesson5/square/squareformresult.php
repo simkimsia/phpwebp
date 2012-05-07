@@ -38,7 +38,7 @@
 			// we add new error into $errors
 			$errors[] = "Length is not given";
 			
-		} // end if length NOT a number
+		} // end if length NOT given
 		
 
 		$lengthNotANumber = !is_numeric($_POST['length']);
