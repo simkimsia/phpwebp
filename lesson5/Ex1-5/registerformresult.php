@@ -41,7 +41,7 @@
 		$message = $message . "\t\t" . 'Contact No : ' . $contactno . ' <br />' . "\n";
 		$message = $message . "\t\t" . 'Gender : ' . $gender . ' <br />' . "\n";
 		
-		$message = $message . "\t\t" . 'Diploma : '. $gender . '<br />' . "\n";		
+		$message = $message . "\t\t" . 'Diploma : '. $diploma . '<br />' . "\n";		
 		
 		$message = $message . "\t\t" . 'Interests : <br />' . "\n";
 		$message = $message . "\t\t" . '<ol>' . "\n";		
