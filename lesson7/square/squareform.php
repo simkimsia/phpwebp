@@ -31,10 +31,10 @@
 	 */
 	
 	// store !empty($_POST) into a more readable variable
-	$userArriveBySubmittingAForm = !empty($_POST);
+
 	
 	// @NEW user arrives by GET
-	$userArriveByClickingOrDirectlyTypeURL = !$userArriveBySubmittingAForm;
+
 	
 	// check if user arrives here via a POSTBACK
 	if ($userArriveBySubmittingAForm) {
@@ -45,24 +45,23 @@
 		*
 		***/
 
-
-		$lengthNotANumber = !is_numeric($_POST['length']);
+		// length not a number check
 
 		// if length is NOT a number
 		if ($lengthNotANumber) {
 			
 			// @NEW we add new error into $errors but this time we state the key!
-			$errors['length'] = "Length is not a number";
+
 			
 		} // end if length NOT a number
 		
-		$lengthNotGiven = empty($_POST['length']);
+		// length not given 
 		
 		// if length is NOT given
 		if ($lengthNotGiven) {
 			
-			// we add new error into $errors
-			$errors['length'] = "Length is not given";
+			// @NEW we add new error into $errors but this time we state the key!
+
 			
 		} // end if length NOT given
 		
@@ -77,13 +76,13 @@
 		$noErrors = (count($errors) == 0);
 		
 		//@NEW haveErrors is the opposite of noErrors
-		$haveErrors = !$noErrors;
+		
 		
 		
 		if ($noErrors) {
 			
 			if (!empty($_POST['length'])) {
-				$length = $_POST['length'];
+				
 			} // end if length NOT empty
 
 		} // end if no errors
@@ -95,8 +94,8 @@
 	// for successful POST
 	if ($noErrors && $userArriveBySubmittingAForm) {
 		// calculate the area and perimeter
-		$area = $length * $length;
-		$perimeter = 4 *  $length;
+		$area = 0;
+		$perimeter = 0;
 
 
 		$newTitle = 'Square - Length:' . $length . 'cm Area:' . $area . 'cm square Perimeter:' . $perimeter . 'cm';
@@ -116,10 +115,7 @@
 		
 		<br /><br />
 		<!-- POSTBACK to itself. so the action is squareform.php -->
-		<form action="squareform.php" method="post">
-			Length : <input type="text" name="length" /> cm <br>
-			<input type="submit" value="Submit Form">
-		</form>
+
 		
 		<br />
 		<a href="../index.php">Back to index</a>
@@ -150,9 +146,7 @@
 			$message = $message . "\t\t\t" . '<li>' . $errorMessage . '</li>' . "\n";
 			
 			//@NEW extract length error message
-			if ($key == 'length') {
-				$lengthError = $errorMessage;
-			}
+
 		}
 		
 		$message = $message . "\t\t" . '</ol><br /><br />' . "\n";
@@ -161,10 +155,7 @@
 		
 		
 		<!-- POSTBACK to itself. so the action is squareform.php -->
-		<form action="squareform.php" method="post">
-			Length : <input type="text" name="length" /> cm <font color ="red">'. $lengthError .'</font><br>
-			<input type="submit" value="Submit Form">
-		</form>
+		
 		
 		<br />
 		<a href="../index.php">Back to index</a>
@@ -181,10 +172,7 @@
 		$message = '
 		<h1>Calculate Square Statistics <font color="red">with Validation</font> <font color="blue">POSTBACK To itself</font></h1>
 		<!-- POSTBACK to itself. so the action is squareform.php -->
-		<form action="squareform.php" method="post">
-			Length : <input type="text" name="length"> cm<br>
-			<input type="submit" value="Submit Form">
-		</form>
+
 		
 		<br />
 		<a href="../index.php">Back to index</a>
