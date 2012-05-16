@@ -57,7 +57,7 @@
 		if ($passwordNotMatch || $emailNotMatch) {
 			
 			// @TODO code expected here
-			$errorsp[] = 'Login fail. Wrong email or password';
+			$errors[] = 'Login fail. Wrong email or password';
 			
 		} // end if email or password don't match
 
@@ -91,7 +91,7 @@
 	} else if ($haveErrors && $userArriveBySubmittingAForm) {
 		// $newTitle here
 		// @TODO code expected here
-		$newTitle = 'Error! '
+		$newTitle = 'Error!';
 		
 		//  put the h1 first for message
 		$message = '
