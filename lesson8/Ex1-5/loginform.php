@@ -94,10 +94,7 @@
 		$newTitle = 'Error!';
 		
 		//  put the h1 first for message
-		$message = '
-		<h1>Login Form <font color="red">with Validation</font> <font color="blue">POSTBACK To itself</font></h1>
-				<h2>Email: john@gmail.com Password: happy</h2>
-		';
+		$message = '';
 		
 		$message = $message . "\t\t" . '<font color="red">Fail!</font><br />' . "\n";
 		$message = $message . "\t\t" . 'Validation errors : <br />' . "\n";
@@ -140,7 +137,7 @@
 	<body>
 		
 		
-		<form action="loginformresult.php" method="post">
+		<form action="loginform.php" method="post">
 			<table cellpadding="0" cellspacing="0" style="width: 100%; height: 100px;">
 				<tr>
 					<td style="width: 100%; height: 20%;">

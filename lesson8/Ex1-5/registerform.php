@@ -41,6 +41,7 @@
 	
 	// use require_once to include the validations/registerformresult.php
 	// @TODO code expected here
+	require_once('validations/registerformresult.php');
 	
 	
 	// for successful POST
@@ -91,9 +92,6 @@
 		$message = "\t\t" . '<font color="red">Fail!</font><br />' . "\n";
 		$message = $message . "\t\t" . 'Validation errors : <br />' . "\n";
 		// @TODO code expected here
-		foreach($errors as $key=>$error) {
-			$message = $message . "\t\t\t" . '<li>' . $error . '</li>' . "\n";			
-		}
 		
 		$message = $message . "\t\t" . '<ol>' . "\n";
 		
@@ -169,7 +167,6 @@
 					<td style="width: 100%; height: 70%;">
 						
 						<?php echo $message; ?>
-						<?php ?>
 						<?php if ($haveErrors || $userArriveByClickingOrDirectlyTypeURL) : ?>
 						<h2>
 							Visitor Registration Page
