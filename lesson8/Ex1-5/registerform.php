@@ -124,6 +124,10 @@
 			if ($key == 'interests') {
 				$interestsError = $errorMessage;
 			}
+			
+			if ($key == 'gender') {
+				$genderError = $errorMessage;
+			}
 		}
 		
 		$message = $message . "\t\t" . '</ol>' . "\n";		
