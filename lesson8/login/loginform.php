@@ -84,10 +84,7 @@
 		$newTitle = 'Error! Validation failed!!';
 		
 		// @NEW put the h1 first for message
-		$message = '
-		<h1>Login Form <font color="red">with Validation</font> <font color="blue">POSTBACK To itself</font></h1>
-				<h2>Email: john@gmail.com Password: happy</h2>
-		';
+		$message = '';
 		
 		$message = $message . "\t\t" . '<font color="red">Fail!</font><br />' . "\n";
 		$message = $message . "\t\t" . 'Validation errors : <br />' . "\n";
