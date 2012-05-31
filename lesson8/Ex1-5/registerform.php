@@ -212,7 +212,8 @@
 							</p>
 							<p>
 								<b>Please enter any other Comments you may have:</b><br>
-								<textarea name="comments" rows="5" cols="60"><?php echo $comments; // @TODO notice how i set sticky for textarea ? ?></textarea>
+								<!-- this is how you make textarea sticky -->
+								<textarea name="comments" rows="5" cols="60"><?php echo $comments; ?></textarea>
 							</p>
 						</fieldset>
 						<div align="center">
