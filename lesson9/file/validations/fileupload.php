@@ -55,8 +55,11 @@
 		
 		// if successful, we want to copy the file to our images folder
 		if ($fileUploaded['error'] == UPLOAD_ERR_OK) {
-			// we need the ../ because the images folder is in the same parent folder as validations
-			$imagesDirectory = $currentDirectory . '../images/'; 
+
+			$imagesDirectory = $currentDirectory . '/images/'; 
+			print $imagesDirectory;
+			print $newFileName;
+			//exit;
 			$successfullyMoveFile = move_uploaded_file($fileUploaded["tmp_name"], $imagesDirectory . $newFileName);
 		}
 	}
