@@ -57,9 +57,6 @@
 		if ($fileUploaded['error'] == UPLOAD_ERR_OK) {
 
 			$imagesDirectory = $currentDirectory . '/images/'; 
-			print $imagesDirectory;
-			print $newFileName;
-			//exit;
 			$successfullyMoveFile = move_uploaded_file($fileUploaded["tmp_name"], $imagesDirectory . $newFileName);
 		}
 	}
