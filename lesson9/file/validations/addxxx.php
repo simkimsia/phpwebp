@@ -26,12 +26,8 @@ if ($userArriveBySubmittingAForm) {
 		if (!empty($_POST['subject'])) {				
 			$subject = $_POST['subject'];			
 		} // end if subject NOT empty		
-		
 
-		if ($successfullyMoveFile) {
-			$imageSource = $newFileName;
-		}
 	} // end if no errors		
-	}
+}
 
-	?>
+?>

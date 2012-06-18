@@ -1,7 +1,7 @@
 <?php 
 
 	$subject = '';
-	$imageSource = '';
+
 	$newFileName = uniqid();
 	
 	$fileError = '';
@@ -22,7 +22,7 @@
 		$message = $message . "\t\t" . 'Subject : ' . $subject . ' <br />' . "\n";
 		
 		$message = $message . "\t\t" . 'Image:<br />';
-		$message = $message . '<img width="300" height="300" src="images/' . $imageSource . '" />';
+		$message = $message . '<img width="300" height="300" src="images/' . $newFileName . '" />';
 		
 	// not successful add new xxx
 	} elseif ($haveErrors && $userArriveBySubmittingAForm) {
