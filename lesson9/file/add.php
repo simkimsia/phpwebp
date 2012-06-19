@@ -4,13 +4,7 @@
 	$lesson9Directory = dirname($fileDirectory); // this gives us the path to the lesson9 folder
 	$rootDirectory = dirname($lesson9Directory); // this gives us the path to the parent folder of lesson9 folder
 	$imagesDirectory = $fileDirectory . DIRECTORY_SEPARATOR . 'images' . DIRECTORY_SEPARATOR;
-	
-	/*
-	require_once $rootDirectory . DIRECTORY_SEPARATOR . 'aws_sdk' . DIRECTORY_SEPARATOR . 'sdk.class.php';
-	$s3 = new AmazonS3();
-	$bucket = 'phpwebp';
-	*/
-	
+		
 	$subject = '';
 
 	$newFileName = uniqid();
@@ -33,7 +27,7 @@
 		$message = $message . "\t\t" . 'Subject : ' . $subject . ' <br />' . "\n";
 		
 		$message = $message . "\t\t" . 'Image:<br />';
-		//$imageSource = $s3->get_object_url($bucket, $newFileName);
+		
 		$imageSource = 'images/' . $newFileName;
 		$message = $message . '<img width="300" height="300" src="'.$imageSource.'" />';
 		

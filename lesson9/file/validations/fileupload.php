@@ -56,12 +56,7 @@
 		if ($fileUploaded['error'] == UPLOAD_ERR_OK) {
 			
 			$successfullyMoveFile = move_uploaded_file($fileUploaded["tmp_name"], $imagesDirectory . $newFileName);
-			/*
-			$successfullyMoveFile = $s3->create_object($bucket, $newFileName, array(
-				'fileUpload' => $fileUploaded["tmp_name"],
-				'acl'	=> $s3::ACL_PUBLIC
-			));
-			*/
+			
 		}
 	}
 ?>

@@ -11,5 +11,7 @@ mainsite/tmp
 app/tmp
 themes/tmp
 
+aws_sdk/*
+
 !empty
 *Thumbs.db
