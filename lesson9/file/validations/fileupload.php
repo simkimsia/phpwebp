@@ -2,6 +2,11 @@
 
 	$currentDirectory = getcwd();
 	
+	
+	require_once $currentDirectory . '/../../awssdk/sdk.class.php';
+	$s3 = new AmazonS3();
+	$bucket = 'phpwebp';
+	
 	// list of possible upload error codes
 	// copied from http://www.php.net/manual/en/features.file-upload.errors.php
 	$uploadErrors = array( 
@@ -59,7 +64,11 @@
 			$imagesDirectory = $currentDirectory . '/images/'; 
 			//print $imagesDirectory . $newFileName;
 			
-			$successfullyMoveFile = move_uploaded_file($fileUploaded["tmp_name"], $imagesDirectory . $newFileName);
+			//$successfullyMoveFile = move_uploaded_file($fileUploaded["tmp_name"], $imagesDirectory . $newFileName);
+			$successfullyMoveFile = $s3->create_object($bucket, $newFileName, array(
+				'fileUpload' => 'images/'. $newFileName,
+				'acl'	=> $s3::ACL_PUBLIC
+			));
 		}
 	}
 ?>

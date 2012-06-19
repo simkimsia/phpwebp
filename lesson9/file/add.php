@@ -1,5 +1,11 @@
 <?php 
 
+	$currentDirectory = getcwd();
+
+	require_once $currentDirectory . '/../../awssdk/sdk.class.php';
+	$s3 = new AmazonS3();
+	$bucket = 'phpwebp';
+	
 	$subject = '';
 
 	$newFileName = uniqid();
@@ -22,7 +28,8 @@
 		$message = $message . "\t\t" . 'Subject : ' . $subject . ' <br />' . "\n";
 		
 		$message = $message . "\t\t" . 'Image:<br />';
-		$message = $message . '<img width="300" height="300" src="images/' . $newFileName . '" />';
+		$imageSource = $s3->get_object_url($bucket, 'images/' . $newFileName);
+		$message = $message . '<img width="300" height="300" src="'.$imageSource.'" />';
 		
 	// not successful add new xxx
 	} elseif ($haveErrors && $userArriveBySubmittingAForm) {

@@ -1,4 +1,5 @@
 <?php
+
 // store !empty($_POST) into a more readable variable	
 $userArriveBySubmittingAForm = !empty($_POST);	
 
