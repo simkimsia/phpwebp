@@ -1,11 +1,5 @@
 <?php
 
-	$currentDirectory = getcwd();
-	
-	
-	require_once $currentDirectory . '/../../awssdk/sdk.class.php';
-	$s3 = new AmazonS3();
-	$bucket = 'phpwebp';
 	
 	// list of possible upload error codes
 	// copied from http://www.php.net/manual/en/features.file-upload.errors.php
@@ -60,15 +54,14 @@
 		
 		// if successful, we want to copy the file to our images folder
 		if ($fileUploaded['error'] == UPLOAD_ERR_OK) {
-
-			$imagesDirectory = $currentDirectory . '/images/'; 
-			//print $imagesDirectory . $newFileName;
 			
-			//$successfullyMoveFile = move_uploaded_file($fileUploaded["tmp_name"], $imagesDirectory . $newFileName);
+			$successfullyMoveFile = move_uploaded_file($fileUploaded["tmp_name"], $imagesDirectory . $newFileName);
+			/*
 			$successfullyMoveFile = $s3->create_object($bucket, $newFileName, array(
-				'fileUpload' => 'images/'. $newFileName,
+				'fileUpload' => $fileUploaded["tmp_name"],
 				'acl'	=> $s3::ACL_PUBLIC
 			));
+			*/
 		}
 	}
 ?>
