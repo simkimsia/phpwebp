@@ -5,7 +5,7 @@
 	$rootDirectory = dirname($lesson9Directory); // this gives us the path to the parent folder of lesson9 folder
 	$imagesDirectory = $fileDirectory . DIRECTORY_SEPARATOR . 'images' . DIRECTORY_SEPARATOR;
 	
-	require_once $rootDirectory . DIRECTORY_SEPARATOR . 'awssdk' . DIRECTORY_SEPARATOR . 'sdk.class.php';
+	require_once $rootDirectory . DIRECTORY_SEPARATOR . 'aws_sdk' . DIRECTORY_SEPARATOR . 'sdk.class.php';
 	$s3 = new AmazonS3();
 	$bucket = 'phpwebp';
 	
