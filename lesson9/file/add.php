@@ -2,8 +2,10 @@
 
 	$fileDirectory = dirname(__FILE__); // this gives us the path to file folder
 	$lesson9Directory = dirname($fileDirectory); // this gives us the path to the lesson9 folder
-	$rootDirectory = dirname($lesson9Directory); // this gives us the path to the parent folder of lesson9 folder
-	$imagesDirectory = $fileDirectory . DIRECTORY_SEPARATOR . 'images' . DIRECTORY_SEPARATOR;
+	$imagesDirectory = $fileDirectory . DIRECTORY_SEPARATOR . 'images' . DIRECTORY_SEPARATOR; // this gives us the path to the images folder 
+	// you need to use DIRECTORY_SEPARATOR because it represents the slashes in C:\\xampp\htdocs\12345678A\assignment1\images
+	// in cloudcontrolled.com the slashes are / which is opposite to your slash on your computer
+	// so the best way is to use DIRECTORY_SEPARATOR which php will cleverly pick the right slash depending on the machine
 		
 	$subject = '';
 
