@@ -3,7 +3,7 @@
 
 
 
-	$githuburl = "https://github.com/simkimsia/phpwebp/blob/lesson7/lesson7/";
+	$githuburl = "https://github.com/simkimsia/phpwebp/blob/lesson8/lesson8/";
 
 
 
@@ -24,6 +24,7 @@
 			<li><a href="login/loginform.php">Successful redirect: Login</a>  (code available <a href="<?php echo $githuburl; ?>login">here</a>)</li>
 		
 			<li><a href="Ex1-5/index.php">Fix Register and Login form in Ex1-5</a>  (TODO) </li>
+			<li><a href="sticky_dropdown/form.php">How to make sticky for dropdown</a>  (code available <a href="<?php echo $githuburl; ?>sticky_dropdown">here</a>) </li>
 		</ul>
 	</body>
 </html>

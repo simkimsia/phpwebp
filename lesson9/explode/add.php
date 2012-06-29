@@ -1,8 +1,4 @@
 <?php 
-
-	$fileDirectory = dirname(__FILE__); // this gives us the path to file folder
-	$lesson9Directory = dirname($fileDirectory); // this gives us the path to the lesson9 folder
-	$rootDirectory = dirname($lesson9Directory); // this gives us the path to the parent folder of lesson9 folder
 		
 	$keywords = array();
 	$nondefaultKeywords = array();
