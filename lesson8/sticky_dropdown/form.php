@@ -21,12 +21,17 @@
 	//@NEW haveErrors is the opposite of noErrors
 	$haveErrors = !$noErrors;
 	
+	
 	// construct an array that will store all the option values in dropdown
 	$animals = array(
 		'1' => 'Lion',
 		'2' => 'Tiger',
 		'3'	=> 'Sylvester'
 	);
+	
+	
+	// set default dropdownError
+	$dropdownError = '';
 	
 	// this means the keys are 1, 2, 3
 	// this means the values are Lion, Tiger, Sylvester respectively
@@ -113,6 +118,11 @@
 		foreach ($errors as $key=>$errorMessage) {
 			$message = $message . "\t\t\t" . '<li>' . $errorMessage . '</li>' . "\n";
 			
+			
+			if ($key == 'dropdown') {
+				$dropdownError = $errorMessage;
+			}
+			
 		}
 		
 		$message = $message . "\t\t" . '</ol><br /><br />' . "\n";
@@ -161,6 +171,7 @@
 				<option value="<?php echo $key; ?>"  <?php if ($dropdown == $key) echo "selected"; ?> ><?php echo $animal; ?></option>
 			<?php endforeach; ?>
 			</select>
+			<font color="red"><?php echo $dropdownError; ?></font>
 			<br />
 			<input type="submit" value="Submit Form">
 		</form>
