@@ -10,13 +10,35 @@
 	</head>
 	<body>
 		<h1>Database docs</h1>
+		<h2>Using PHP with MySQL</h2>
+		<ul>
+			<li><a href="installadminer.php">Creating </a></li>
+			<li><a href="adminer/login.php"> Login</a> to your mySQL database software</li>
+			<li><a href="adminer/createdb.php">Create</a> a database in the software</li>
+			<li><a href="adminer/selectdatabase.php">Select</a> a database in the software</li>
+			<li><a href="adminer/importscript.php">Import</a> script to populate an existing database</li>
+			<li><a href="adminer/importscript.php">Import</a> script to create a database from scratch</li>
+		</ul>
+		
+		<h2>Using Adminer</h2>
 		<ul>
 			<li><a href="installadminer.php">Install adminer on localhost</a></li>
-			<li><a href="phpmyadmin.php">Turn on phpMyAdmin in localhost</a></li>
-			<li>Login to your mySQL database software using (<a href="adminer/login.php"> adminer</a> | <a href="phpmyadmin/login.php"> phpmyadmin</a>)</li>
-			<li>Create a new database using (<a href="adminer/createdb.php"> adminer</a> | <a href="phpmyadmin/createdb.php"> phpmyadmin</a>)</li>
-			<li>Select a database to do work in using (<a href="adminer/selectdatabase.php"> adminer</a> | <a href="phpmyadmin/selectdatabase.php"> phpmyadmin</a>)</li>
-			<li>Import mysql database script <a href="adminer/importscript.php">using adminer</a> | <a href="phpmyadmin/importscript.php">using phpmyadmin</a></li>
+			<li><a href="adminer/login.php"> Login</a> to your mySQL database software</li>
+			<li><a href="adminer/createdb.php">Create</a> a database in the software</li>
+			<li><a href="adminer/selectdatabase.php">Select</a> a database in the software</li>
+			<li><a href="adminer/importscript.php">Import</a> script to populate an existing database</li>
+			<li><a href="adminer/importscriptnewdb.php">Import</a> script to create a database from scratch</li>
+			
 		</ul>
+		
+		<h2>Using PhpMyAdmin</h2>
+		<ul>
+			<li><a href="phpmyadmin.php">Turn on phpMyAdmin in localhost</a></li>
+			<li><a href="phpmyadmin/createdb.php">Create</a> a database in the software</li>
+			<li><a href="phpmyadmin/selectdatabase.php">Select</a> a database in the software</li>
+			<li><a href="phpmyadmin/importscript.php">Import</a> script to populate an existing database</li>
+			<li><a href="phpmyadmin/importscript.php">Import</a> script to create a database scratch</li>
+		</ul>
+		
 	</body>
 </html>
