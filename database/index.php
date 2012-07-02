@@ -12,7 +12,7 @@
 		<h1>Database docs</h1>
 		<h2>Using PHP with MySQL</h2>
 		<ul>
-			<li><a href="installadminer.php">Creating </a></li>
+			<li><a href="installadminer.php">Creating a configuration file for MySQL access</a></li>
 			<li><a href="adminer/login.php"> Login</a> to your mySQL database software</li>
 			<li><a href="adminer/createdb.php">Create</a> a database in the software</li>
 			<li><a href="adminer/selectdatabase.php">Select</a> a database in the software</li>
