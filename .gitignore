@@ -15,3 +15,5 @@ aws_sdk/*
 
 !empty
 *Thumbs.db
+
+*.local.*
