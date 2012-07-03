@@ -41,6 +41,11 @@
 		);
 	}
 
+	// SLide 14 aka Step 7
+	$stmt->close();
+	
+	// SLide 15 aka Step 8
+	$mysqli->close();
 
 
 ?>
