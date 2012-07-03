@@ -1,30 +1,7 @@
 <?php
-
-	$studentToDisplay = array();
+	require_once('config/database.php');
 	
-	$students = array(
-		'A001' => array(
-			'id'	=> 'A001',
-			'url' 	=> 'studentview.php?id=A001',
-			'name' 	=> 'Charles Xavier',
-			'GPA'	=> 1.5,
-			'image'	=> 'images/xavier.jpg'
-		),
-		'A002' => array(
-			'id'	=> 'A002',
-			'url' 	=> 'studentview.php?id=A002',
-			'name' 	=> 'Erik Magnus Lensherr',
-			'GPA'	=> 2.7,
-			'image'	=> 'images/erik.jpeg'
-		),
-		'A003' => array(
-			'id'	=> 'A003',
-			'url' 	=> 'studentview.php?id=A003',
-			'name' 	=> 'Jean Grey',
-			'GPA'	=> 4.0,
-			'image' => 'images/jean.jpeg'
-		),
-	);
+	$studentToDisplay = array();
 
 	// we need to know what student id was used to display the details
 	$studentID = $_GET['id']; 

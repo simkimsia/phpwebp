@@ -1,6 +1,5 @@
 <?php
-
-
+	
 	$students = array(
 		'A001' => array(
 			'id'	=> 'A001',
