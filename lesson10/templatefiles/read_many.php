@@ -43,6 +43,11 @@
 		);
 	}
 
+	// SLide 14 aka Step 7
+	$stmt->close();
+	
+	// SLide 15 aka Step 8
+	$mysqli->close();
 
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
