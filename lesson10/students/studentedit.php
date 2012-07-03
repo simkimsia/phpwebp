@@ -23,7 +23,7 @@
 		$stmt->bind_param("ssi", $newName, $newGPA, $studentID); // 3 ??? so we use ssi. we use ssi because name, gpa is varchar in the table and id is INT
 
 		// Slide 7 aka Step 4
-		$updateResult = $stmt->execute(); 
+		$successfullyUpdated = $stmt->execute(); 
 		
 		// Slide 8 aka Step 5
 		// we won't check the update result here.
