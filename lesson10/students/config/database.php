@@ -10,8 +10,8 @@
 
 		$database_name = 'phpwebp_11012345a';
 		$database_username = 'root';
-		$database_password = 'password';
-		$database_hostname = '127.0.0.1';
+		$database_password = null;
+		$database_hostname = 'localhost';
 	}
 	
 	// the credentials for cloudcontrol database

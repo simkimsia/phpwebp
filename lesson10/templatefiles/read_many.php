@@ -8,20 +8,15 @@
 	// see Lecture Webp_Week10b11_Using_PHPandMySQL(Query).pptx Slide 8 aka Step 1
 	$mysqli = new mysqli($database_hostname, $database_username, $database_password, $database_name) or exit("Error connecting to database"); 
 	
-	/**
-	* Select means find 
-	* * means ALL the COLUMNS 
-	* FROM xxx means you will do your Select inside the table named xxx
-	**/
 	// Slide 9 aka Step 2
-	$stmt = $mysqli->prepare("SELECT * FROM lesson10_students"); 
-	
+	$stmt = $mysqli->prepare("SELECT * FROM `lesson10_students`"); 
+
 	// Slide 10 aka Step 3
 	// no placeholder ? in step 2 means we no need Step 3
-	
+
 	// Slide 11 aka Step 4
-	$stmt = $mysqli->execute(); 
-	
+	$stmt->execute(); 
+
 	/**
 	* No. of variables MUST match no. of COLUMNS retrieved
 	* Since in Step 2 we retrieved * meaning ALL the Columns
@@ -35,16 +30,16 @@
 	**/
 	// Slide 12 aka Step 5
 	$stmt->bind_result($id, $name, $gpa, $image);
-	
+
 	// Slide 13 aka Step 6
 	$students = array(); // prepare an empty array to store all the results fetched from database
-	while ($stmt->fetch) {
+	while ($stmt->fetch()) {
 		// adding the fetched results one by one using the while loop
 		$students[$id] = array(
 			'id' => $id,
 			'name' => $name,
 			'gpa' => $gpa,
-			'image' => $gpa
+			'image' => $image
 		);
 	}
 
