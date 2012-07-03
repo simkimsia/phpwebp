@@ -1,22 +1,20 @@
 <?php
-echo 1;
+
 	// the file that contains your database credentials like username and password
 	require_once('config/database.php');
 	
-	echo 2;
-	echo $database_name;
 	// see Lecture Webp_Week10b11_Using_PHPandMySQL(Query).pptx Slide 8 aka Step 1
 	$mysqli = new mysqli($database_hostname, $database_username, $database_password, $database_name) or exit("Error connecting to database"); 
-	echo 3;
+	
 	// Slide 9 aka Step 2
-	$stmt = $mysqli->prepare("SELECT * FROM `students`"); 
-	echo 4;
+	$stmt = $mysqli->prepare("SELECT * FROM `lesson10_students`"); 
+
 	// Slide 10 aka Step 3
 	// no placeholder ? in step 2 means we no need Step 3
-echo $stmt;
+
 	// Slide 11 aka Step 4
 	$stmt->execute(); 
-	echo 5;
+
 	/**
 	* No. of variables MUST match no. of COLUMNS retrieved
 	* Since in Step 2 we retrieved * meaning ALL the Columns
@@ -30,10 +28,10 @@ echo $stmt;
 	**/
 	// Slide 12 aka Step 5
 	$stmt->bind_result($id, $name, $gpa, $image);
-echo 6;
+
 	// Slide 13 aka Step 6
 	$students = array(); // prepare an empty array to store all the results fetched from database
-	while ($stmt->fetch) {
+	while ($stmt->fetch()) {
 		// adding the fetched results one by one using the while loop
 		$students[$id] = array(
 			'id' => $id,
