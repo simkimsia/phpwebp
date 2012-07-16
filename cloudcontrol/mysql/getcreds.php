@@ -12,7 +12,8 @@
 		<h1>Get MySQL username, password and hostname for cloudcontrol hosting</h1>
 		<ol>
 			<li><p>Turn on your git bash or command line prompt</p></li>
-			<li><p>Type <i>cctrlapp <strong>APP_NAME/DEP_NAME</strong> addon mysqls.free</i>. For e.g.,<br />
+			<li><p>Type <i>"cctrlapp <strong>APP_NAME/DEP_NAME</strong> addon mysqls.free</i>"<br/>
+				   <strong>Note that there isn't ".add" after "addon".<strong> For e.g.,<br />
 				
 				<img src="../images/mysql/getcreds1.png" />
 				</p></li>
