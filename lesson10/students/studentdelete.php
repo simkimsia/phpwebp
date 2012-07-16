@@ -10,7 +10,7 @@
 		$mysqli = new mysqli($database_hostname, $database_username, $database_password, $database_name) or exit("Error connecting to database"); 
 
 		// Slide 5 aka Step 2
-		$stmt = $mysqli->prepare("DELETE `lesson10_students` WHERE `id` = ?"); 
+		$stmt = $mysqli->prepare("DELETE FROM `lesson10_students` WHERE `id` = ?"); 
 
 		// Slide 6 aka Step 3 the bind params must correspond to the ?
 		$stmt->bind_param("i", $studentID); // 1 ? so we use i. we use i because  id is INT

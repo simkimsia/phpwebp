@@ -1,5 +1,6 @@
 <?php
-	
+	// code that will update the student stats
+	require_once('studentedit.php');
 	
 	// See Webp_Week12_UsingPHPANDMySQLQuery.pptx
 	// Slide 14 Step 0
@@ -82,12 +83,12 @@
 		
 		
 		
-		<form action="studentview.php" method="post"> <!--  the edit form should contain all the form elements -->
+		<form action="studentview.php?id=<?php echo $studentID; ?>" method="post"> <!--  the edit form should contain all the form elements -->
 			
 		<table>
 			<tr>
 				<td><strong>Profile: </strong></td>
-				<td><img src="<?php echo $image; ?>" /></td>
+				<td><img src="images/<?php echo $image; ?>" /></td>
 			</tr>
 			<!-- this input type is for id . it MUST be invisible to the visitor, so we choose hidden type -->
 			<input type="hidden" name="id" value="<?php echo $id; ?>" />

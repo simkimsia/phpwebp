@@ -7,7 +7,7 @@
 #
 # Host: 127.0.0.1 (MySQL 5.5.15)
 # Database: phpwebp_11012345a
-# Generation Time: 2012-07-03 12:04:47 +0000
+# Generation Time: 2012-07-04 12:44:16 +0000
 # ************************************************************
 
 
@@ -20,29 +20,28 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 
-# Dump of table lesson10_students
+# Dump of table lesson11_users
 # ------------------------------------------------------------
 
-DROP TABLE IF EXISTS `lesson10_students`;
+DROP TABLE IF EXISTS `lesson11_users`;
 
-CREATE TABLE `lesson10_students` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `name` varchar(255) NOT NULL,
-  `gpa` varchar(255) NOT NULL,
-  `image` varchar(255) NOT NULL,
-  PRIMARY KEY (`id`)
+CREATE TABLE `lesson11_users` (
+  `userid` varchar(20) NOT NULL DEFAULT '',
+  `name` varchar(255) DEFAULT NULL,
+  `password` varchar(255) DEFAULT NULL,
+  `interests` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`userid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-LOCK TABLES `lesson10_students` WRITE;
-/*!40000 ALTER TABLE `lesson10_students` DISABLE KEYS */;
+LOCK TABLES `lesson11_users` WRITE;
+/*!40000 ALTER TABLE `lesson11_users` DISABLE KEYS */;
 
-INSERT INTO `lesson10_students` (`id`, `name`, `gpa`, `image`)
+INSERT INTO `lesson11_users` (`userid`, `name`, `password`, `interests`)
 VALUES
-	(1,'Charles Xavier','1.5','images/xavier.jpg'),
-	(2,'Erik Magnus Lensherr','2.7','images/erik.jpeg'),
-	(3,'Jean Grey','4.0','images/jean.jpeg');
+	('user1','john','12345678','Music,Movies'),
+	('user2','johnny','password','Music');
 
-/*!40000 ALTER TABLE `lesson10_students` ENABLE KEYS */;
+/*!40000 ALTER TABLE `lesson11_users` ENABLE KEYS */;
 UNLOCK TABLES;
 
 

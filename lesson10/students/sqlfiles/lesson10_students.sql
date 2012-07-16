@@ -7,7 +7,7 @@
 #
 # Host: 127.0.0.1 (MySQL 5.5.15)
 # Database: phpwebp_11012345a
-# Generation Time: 2012-07-03 12:04:47 +0000
+# Generation Time: 2012-07-03 17:06:26 +0000
 # ************************************************************
 
 
@@ -38,9 +38,9 @@ LOCK TABLES `lesson10_students` WRITE;
 
 INSERT INTO `lesson10_students` (`id`, `name`, `gpa`, `image`)
 VALUES
-	(1,'Charles Xavier','1.5','images/xavier.jpg'),
-	(2,'Erik Magnus Lensherr','2.7','images/erik.jpeg'),
-	(3,'Jean Grey','4.0','images/jean.jpeg');
+	(1,'Charles Xavier','1.5','xavier.jpg'),
+	(2,'Erik Magnus Lensherr','2.75','erik.jpeg'),
+	(3,'Jean Grey','4.0','jean.jpeg');
 
 /*!40000 ALTER TABLE `lesson10_students` ENABLE KEYS */;
 UNLOCK TABLES;
