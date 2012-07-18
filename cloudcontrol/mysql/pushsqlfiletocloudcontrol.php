@@ -17,6 +17,8 @@
 			<li><p>Use the credentials that you got from <a href="getcreds.php">part 2</a> (Get MySQL username, password and hostname for cloudcontrol) Note: Leave "Database" BLANK</p></li>
 				<img src="../images/mysql/getcreds2.png"/><br/>
 				
+			<li><p>Select on the correct database first!!</p></li>
+			
 			<li><p>Click on "SQL command"</p></li>
 			<img src="../images/mysql/pushsqlstep1.png" /><br/>
 			
