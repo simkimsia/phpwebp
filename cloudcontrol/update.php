@@ -19,7 +19,7 @@
 					</p>
 			</li>
 			<li>
-				<p>Type <i>git commit -m 'initial commit'<strong>Fill in any message you want</strong></i>For e.g.,<br />
+				<p>Type <i>git commit -m 'initial commit' <strong>(Fill in any message you want)</strong></i>For e.g.,<br />
 					</p>
 			</li>
 			<li>
