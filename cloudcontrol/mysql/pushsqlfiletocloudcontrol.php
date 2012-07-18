@@ -11,7 +11,7 @@
 	<body>
 		<h1>Push the downloaded sql file</h1>
 		<ol>
-			<li><p>Login into your adminer on cloudcontrol e.g. webp1104103e.cloudcontrol.com/adminer/adminer.php </p></li>
+			<li><p>Login into your adminer on cloudcontrol e.g. webp1104103e.cloudcontrolled.com/adminer/adminer.php </p></li>
 				<img src="../images/mysql/dumpsqlfilestep1.png" /><br/>
 			
 			<li><p>Use the credentials that you got from <a href="getcreds.php">part 2</a> (Get MySQL username, password and hostname for cloudcontrol) Note: Leave "Database" BLANK</p></li>
