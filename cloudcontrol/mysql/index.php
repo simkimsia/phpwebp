@@ -14,9 +14,9 @@
 			Part 1: <li><a href="install.php">Turn on MySQL in cloudcontrol</a></li>
 			Part 2: <li><a href="getcreds.php">Get MySQL username, password and hostname for cloudcontrol</a></li>
 			Part 3: <li><a href="../update.php">Update the cloudcontrol</a></li>
-			Part 3: <li><a href="dumpsqlfile.php">Dump Database from localhost/webpadminnumber/adminer/adminer.php</a></li>
-			Part 4: <li><a href="pushsqlfiletocloudcontrol.php">Push sql file to adminer on cloud control</a></li>
-			Part 5: <li><a href="changeconfig.php">Add the credentials to your database.php</a></li>
+			Part 4: <li><a href="dumpsqlfile.php">Dump Database from localhost/webpadminnumber/adminer/adminer.php</a></li>
+			Part 5: <li><a href="pushsqlfiletocloudcontrol.php">Push sql file to adminer on cloud control</a></li>
+			Part 6: <li><a href="changeconfig.php">Add the credentials to your database.php</a></li>
 		</ul>
 		
 	</body>
