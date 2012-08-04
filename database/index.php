@@ -33,10 +33,6 @@
 		
 		<h2>Using PhpMyAdmin</h2>
 		<ul>
-			<li><a href="phpmyadmin.php">Turn on phpMyAdmin in localhost</a></li>
-			<li><a href="phpmyadmin/createdb.php">Create</a> a database in the software</li>
-			<li><a href="phpmyadmin/selectdatabase.php">Select</a> a database in the software</li>
-			<li><a href="phpmyadmin/importscript.php">Import</a> script to populate an existing database</li>
 			<li><a href="phpmyadmin/importscript.php">Import</a> script to create a database scratch</li>
 		</ul>
 		
