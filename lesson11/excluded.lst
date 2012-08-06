@@ -1,0 +1,3 @@
+excluded.lst
+*.DS_Store
+*.local.*
