@@ -6,6 +6,8 @@ pmip
 *.DS_Store
 tags
 
+*excluded.lst*
+
 ## Tempoarary files
 mainsite/tmp
 app/tmp
