@@ -55,9 +55,7 @@
 
 	<div class="container">
 	
-	<?php if ($uploaded): 
-		$image = $_POST['image'];
-	?>
+	<?php if ($uploaded): ?>
 	<p>Uploaded:</p>
 	<p><img src="images/test" /></p>
 	<?php endif; ?>
