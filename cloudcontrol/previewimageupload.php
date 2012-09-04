@@ -5,7 +5,7 @@
 
 	$newFileName = 'test';
 
-	$uploaded = isset($_POST);
+	$uploaded = !empty($_POST);
 	
 	if ($uploaded) {
 		require_once 'fileupload.php';
@@ -63,6 +63,7 @@
 		<form id="form1" action="previewimageupload.php" enctype="multipart/form-data">
 	        <input type='file' name="file" onchange="readURL(this);" />
 	        <img id="blah" src="#" alt="your image" />
+			<input type="text" name="test" />
 	    </form>
 
 
