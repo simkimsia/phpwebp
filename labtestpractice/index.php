@@ -115,7 +115,7 @@
 		$_SESSION['userid'] = $userid;
 
 		// @NEW we will redirect user to another webpage if successful
-		header('Location: public_home.php');
+		header('Location: home.php');
 		
 				
 	// for error validation

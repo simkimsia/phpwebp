@@ -1,0 +1,114 @@
+/* individual pages */
+#content{
+	-webkit-transition:height .35s ease;
+	position:relative;
+	padding:0;
+	margin:0 auto;
+	z-index:45
+}
+
+#content .brick{
+	cursor: url(https://mail.google.com/mail/images/2/openhand.cur), move;	
+	position:relative;
+	display:block;
+	float:left;
+	width:125px;
+	height:125px; 
+	background:url('img/archive_brick.png') center no-repeat #d8dadd;
+	margin:0 6px 6px 0;
+	padding:0;
+	overflow:hidden;
+	color:#676d72;
+	font:normal 11px Arial,Helvetica,sans-serif;
+	line-height:14px;
+	z-index:50
+}
+
+.grabbed:hover {
+	cursor: url(https://mail.google.com/mail/images/2/closedhand.cur), move !important;
+}
+
+#content .brick .overlay{
+	background:url('img/archive_overlay.png') top center repeat transparent;
+	border:1px solid #2e2e2e;
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	z-index:100;
+	text-align:center;
+	color:#fff;
+	opacity:0;
+	-moz-opacity:0;
+	filter:alpha(opacity=0)
+}
+
+#content .brick:hover .overlay{
+	opacity:1;
+	-moz-opacity:1;
+	filter:alpha(opacity=100)
+}
+
+#content .brick .overlay .inner{
+	position:absolute;
+	top:50%;
+	left:0;
+	right:0;
+	height:40px;
+	margin-top:-20px
+}
+
+#content .brick .overlay .inner .date{
+	font-weight:bold;
+	font-size:16px
+}
+
+#content .brick .overlay .inner .notes{
+	margin-top:5px;
+	font-size:12px
+}
+
+#content .brick.photo{
+	background:#fff;
+	text-align:center;
+	height:auto
+}
+
+#content .brick.photo img{
+	margin:0 auto;
+	padding:0;
+	width:auto;
+	height:auto;
+	max-width:100%
+}
+
+/* close button */
+.btn-close{
+	width:12px;
+	height:12px;
+	overflow:hidden;
+	text-indent:-9999px;
+	background:url(img/btn-close.png) no-repeat;
+	position:absolute;
+	right:5px;
+	top:5px;
+    display:inline-block;
+}
+
+.btn-close span {
+    position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+	background: url(img/btn-close.png) no-repeat;
+    background-position: 0 -12px;
+	opacity: 0;
+    -webkit-transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+    -ms-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+}
+
+.btn-close:hover span {
+    opacity: 1;
+}
