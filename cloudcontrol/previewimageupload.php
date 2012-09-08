@@ -120,8 +120,11 @@
 				
 				.sneaks {width:350px;height:70px;padding:10px;border:1px solid #aaaaaa;}
 			</style>
-		<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<!--		<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 		<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
+		-->
+		<script class="jsbin" src="js/jquery-ui.1.8.0.min.js"></script>
+		<script class="jsbin" src="js/jquery.1.8.1.min.js"></script>		
 	<!-- Date: 2012-09-01 -->
 	<script>
 	
@@ -197,6 +200,11 @@
 						<li class="no-items">(no files uploaded yet)</li>
 					</ul>
 					
+					
+					
+					<p>
+						<a href="#" class="tryagain">Rearrange</a>
+					</p>
 					<table style="position:relative; top:100px;">
 						<tr>
 
@@ -275,7 +283,31 @@
 						  e.dataTransfer.effectAllowed = 'copyMove';
 						  e.dataTransfer.setData('text/html', this.innerHTML);
 					}
+				
 					
+					function runRearrange() {
+						
+						// Get the list items and setup an array for sorting
+						  var arrangeable_imgs = $("img.arrangeable");
+						  var vals = [];
+						
+
+
+						// Populate the array
+						for(var i = 0, l = arrangeable_imgs.length; i < l; i++) {
+						//	alert(arrangeable_imgs[i].attr('width'));
+							vals.push($(arrangeable_imgs[i]).attr('src'));
+						}
+						
+						// reverse the order    
+						for(var i = 0, l = arrangeable_imgs.length; i < l; i++) {
+							var newCounter = l - i - 1;
+
+							$(arrangeable_imgs[i]).attr('src', vals[newCounter]);
+						}
+						
+
+					}
 					
 					var divs = document.querySelectorAll('.brick');
 					[].forEach.call(divs, function(div) {
@@ -321,6 +353,10 @@
 						
 						
 						(function () {
+							
+							
+							
+							
 							var filesUpload = document.getElementById("files-upload"),
 								dropArea = document.getElementById("drop-area"),
 								fileList = document.getElementById("file-list");
@@ -350,10 +386,11 @@
 								*/
 								if (typeof FileReader !== "undefined" && (/image/i).test(file.type)) {
 									img = document.createElement("img");
-									
+									img.className = "arrangeable";
 									
 									var imgdiv = document.createElement("div");
 									imgdiv.draggable = true;
+								
 									
 									imgdiv.className = "brick";
 									imgdiv.className = imgdiv.className + " photo";
@@ -508,7 +545,11 @@
 								this.className = "";
 								evt.preventDefault();
 								evt.stopPropagation();
-							}, false);										
+							}, false);	
+							
+							
+							
+																
 						})();
 					</script>
 	
